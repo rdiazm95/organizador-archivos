@@ -1,12 +1,12 @@
 # 🗂️ Organizador de Archivos por Extensión
 
 Este es un script en **Python** que organiza automáticamente los archivos de un directorio en carpetas según su extensión.  
-Por ejemplo:  
+Por ejemplo:
 
-- `documento.pdf` → `/PDF/`  
-- `foto.jpg` → `/JPG/`  
-- `script.py` → `/PY/`  
-- `notas` (sin extensión) → `/SIN_EXTENSION/`  
+- `documento.pdf` → `/PDF/`
+- `foto.jpg` → `/JPG/`
+- `script.py` → `/PY/`
+- `notas` (sin extensión) → `/SIN_EXTENSION/`
 
 ---
 
@@ -14,65 +14,79 @@ Por ejemplo:
 
 ### 1. Requisitos
 - Tener **Python 3.7+** instalado en tu sistema.  
-  Verifica con:  
-  ```bash
-  python --versión
+  Verifica con:
 
-2. Clonar el repositorio
+```bash
+python --version
+```
 
+
+### 2. Clonar el repositorio
+```bash
 git clone https://github.com/TU-USUARIO/organizador-archivos.git
 cd organizador-archivos
+```
 
-3. Ejecutar el script
+
+### 3. Ejecutar el script
 
 En la terminal:
-
+```bash
 python organizador.py
+```
+
 
 Se pedirá la ruta del directorio a organizar:
 
-👉 Ingresa la ruta del directorio a organizar: C:\Users\TuUsuario\Downloads
+👉 Ingresa la ruta del directorio a organizar: 
+```bash
+C:\Users\TuUsuario\Downloads
+```
 
-📂 Ejemplo
 
-Antes:
+---
 
+## 📂 Ejemplo
+
+**Antes:**
+```bash
 Descargas/
 ├── documento.pdf
 ├── foto.jpg
 ├── musica.mp3
 ├── notas
 ├── script.py
+```
 
 
-Después de ejecutar el script:
-
+**Después de ejecutar el script:**
+```bash
 Descargas/
 ├── PDF/
-│   └── documento.pdf
+│ └── documento.pdf
 ├── JPG/
-│   └── foto.jpg
+│ └── foto.jpg
 ├── MP3/
-│   └── musica.mp3
+│ └── musica.mp3
 ├── SIN_EXTENSION/
-│   └── notas
+│ └── notas
 ├── PY/
-    └── script.py
+└── script.py
+```
 
-⭐ Características
+---
 
-Organización automática por extensión.
+## ⭐ Características
 
-Maneja archivos sin extensión.
+- Organización automática por extensión.
+- Maneja archivos sin extensión.
+- Crea carpetas solo si son necesarias.
+- Compatible con Windows, Linux y macOS.
 
-Crea carpetas solo si son necesarias.
+---
 
-Compatible con Windows, Linux y macOS.
+## 📌 Ideas de mejora
 
-📌 Ideas de mejora
-
-Añadir una interfaz gráfica (GUI) con Tkinter o PyQt.
-
-Permitir configurar carpetas personalizadas (ej: todo lo de imágenes → “IMÁGENES”).
-
-Integrar con un programador de tareas para que se ejecute automáticamente.
+- Añadir una interfaz gráfica (GUI) con Tkinter o PyQt.
+- Permitir configurar carpetas personalizadas (ej: todo lo de imágenes → “IMÁGENES”).
+- Integrar con un programador de tareas para que se ejecute automáticamente.
